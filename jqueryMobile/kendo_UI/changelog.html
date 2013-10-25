@@ -1,0 +1,154 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Changelog for Kendo UI v2013.1.319</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font: .75em/1.5 Tahoma, sans-serif;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            font-size: normal;
+        }
+
+        h2 {
+            font-size: 2em;
+            font-weight: normal;
+
+            margin: 1.2em 0 .3em;
+            padding-bottom: .2em;
+        }
+
+        #page {
+            width: 50em;
+            margin: 0 auto 2em;
+            border-radius: 0 0 1em 1em;
+            box-shadow: 0 0 10px #ccc;
+            padding: 1em 2em 2em;
+        }
+
+        .poBoxIcon {
+            float: left;
+            font-size: 2em;
+            margin: 1.2em .5em 0 0;
+        }
+
+        .poTopLine {
+            border-top: 2px solid #e1e1e1;
+            margin: 17px 0 40px 0;
+        }
+    </style>
+
+    <base href="http://www.kendoui.com/web/whats-new/release-notes/">
+</head>
+<body>
+    <div id="page">
+        <h1 class="title">Release notes for Kendo UI v2013.1.319</h1>
+
+        <h1>Framework</h1>
+        <div class="tClear poTopLine">
+            <div class="poBoxIconText">
+                <p><strong>What's new</strong></p><ul><li>Include VSDOC for all suites in Kendo Complete and Kendo Complete for ASP.NET MVC</li><li>Remove the default JSON parameterMap from DataSource Java wrapper implementation</li></ul>
+                <p><strong>What's fixed</strong></p><ul><li>Flip and pageTurn transitons do not work in IE10</li></ul>
+            </div>
+        </div>
+
+
+        <div class="tClear poTopLine">
+            <img src='/libraries/Kendo_UI_Icons_32x32/DataSource_kendoui.sflb' class='poBoxIcon' width='32' height='32' alt='Kendo UI DataSource Icon'>
+            <h2>DataSource</h2>
+
+            <p><strong>What's new</strong></p><ul><li>Support for virtualization with grouping</li></ul>
+            <p><strong>What's fixed</strong></p><ul><li>OData tranposrt does not support filtering with "Does not contain" operator</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <img src='/libraries/Kendo_UI_Icons_32x32/Globalization_kendoui.sflb' class='poBoxIcon' width='32' height='32' alt='Kendo UI Globalization Icon'>
+            <h2>Globalization</h2>
+
+            <p><strong>What's new</strong></p><ul><li>Expand culture's numberFormat in order to support globalize.js</li><li>Allow to define shortYearCutoff option through culture info script.</li></ul>
+            <p><strong>What's fixed</strong></p><ul><li>kendo.toString hangs out when try to format number with "# yr." format</li><li>Numeric formatting rounds to the last zero placeholder in the decimal part incorrectly</li><li>kendo.parseDate parses incorrectly ISO8601 dates with timezones</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <img src='/libraries/Kendo_UI_Icons_32x32/Grid_kendoui.sflb' class='poBoxIcon' width='32' height='32' alt='Kendo UI Grid Icon'>
+            <h2>Grid</h2>
+
+            
+            <p><strong>What's fixed</strong></p><ul><li>Sorting options of the column menu does not work on touch devices</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <img src='/libraries/Kendo_UI_Icons_32x32/HierarchicalDataSource_kendoui.sflb' class='poBoxIcon' width='32' height='32' alt='Kendo UI HierarchicalDataSource Icon'>
+            <h2>HierarchicalDataSource</h2>
+
+            <p><strong>What's new</strong></p><ul><li>Breaking change: children datasources are now lazily initialized</li></ul>
+            
+        </div>
+        <div class="tClear poTopLine">
+            <img src='/libraries/Kendo_UI_Icons_32x32/MVVM_kendoui.sflb' class='poBoxIcon' width='32' height='32' alt='Kendo UI MVVM Icon'>
+            <h2>MVVM</h2>
+
+            <p><strong>What's new</strong></p><ul><li>Support for setting &lt;select&gt; values which do not exist in the source binding.</li></ul>
+            <p><strong>What's fixed</strong></p><ul><li>MVVM clears the widget, which initiated the model change</li><li>Multi select selection updated if an item is deselected</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <img src='/libraries/Kendo_UI_Icons_32x32/Validator_kendoui.sflb' class='poBoxIcon' width='32' height='32' alt='Kendo UI Validator Icon'>
+            <h2>Validator</h2>
+
+            <p><strong>What's new</strong></p><ul><li>Method for hiding all validation messages</li></ul>
+            
+        </div>
+        <h1>Mobile</h1>
+        <div class="tClear poTopLine">
+            <div class="poBoxIconText">
+                <p><strong>What's new</strong></p><ul><li>useNative option for Scroller and useNativeScrolling option for Mobile View</li><li>Support for server-side navigation for remote views</li><li>Improve view transitions on mobile devices (sometimes they stop abruptly)</li><li>on remote view load, If no data-role=view element is found contents are treated as a single view</li><li>View afterShow event (triggered after the transition is complete)</li><li>Add init, open and close events for the Modal View widget</li><li>Visual Studio 2012 intellisense annotations</li><li>TypeScript support</li><li>RequireJS support</li><li>Improve remote view with parameters behavior</li><li>Introduce contentElement() method to always get the contents parent</li><li>Allow scrollview to scroll to percentage of its width</li><li>ButtonGroup touchstart/end configuration option</li><li>Add support for datetime-local input type.</li></ul>
+                <p><strong>What's fixed</strong></p><ul><li>ScrollView does not work inside a Modal View</li><li>Nexus 10 is not recognized as a tablet </li><li>Textarea cannot be scrolled when inside a mobile application view</li><li>2 actionsheets do not work in view with a model</li><li>ScrollView does not retain its offset on orientation change when pages are present</li><li>Browser window can be dragged on iOS during View transition.</li><li>View Title gets bigger if it has block content</li><li>ListView endless scrolling does not work in a modalview. </li><li>ScrollView does not set its page correctly via data attribute</li></ul>
+            </div>
+        </div>
+
+
+        <div class="tClear poTopLine">
+            <img src='/libraries/Kendo_UI_Icons_32x32/DropDown_kendoui.sflb' class='poBoxIcon' width='32' height='32' alt='Kendo UI DropDownList Icon'>
+            <h2>DropDownList</h2>
+
+            
+            <p><strong>What's fixed</strong></p><ul><li>DropDownList gets opened when being a start point for scrolling in Kendo UI Mobile</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <img src='/libraries/Kendo_UI_Icons_32x32/ListView_kendoui.sflb' class='poBoxIcon' width='32' height='32' alt='Kendo UI ListView Icon'>
+            <h2>ListView</h2>
+
+            <p><strong>What's new</strong></p><ul><li>Add/Remove items depending on the applied action to the observable array.</li><li>ListView filtering</li></ul>
+            <p><strong>What's fixed</strong></p><ul><li>Wrong property name in Kendo Mobile Listview</li><li>Mobile Scroller stops working when user has a finger on the ListView while DataSource changes</li><li>Grouped widget throws a JavaScript exception when clear data using query method</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <img src='/libraries/Kendo_UI_Icons_32x32/Scroller_kendoui.sflb' class='poBoxIcon' width='32' height='32' alt='Kendo UI Scroller Icon'>
+            <h2>Scroller</h2>
+
+            
+            <p><strong>What's fixed</strong></p><ul><li>Mobile Scroller stops working when user has a finger on the ListView while DataSource changes</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <img src='/libraries/Kendo_UI_Icons_32x32/SplitView_kendoui.sflb' class='poBoxIcon' width='32' height='32' alt='Kendo UI SplitView Icon'>
+            <h2>SplitView</h2>
+
+            
+            <p><strong>What's fixed</strong></p><ul><li>Kendo mobile pane does not support initial view setting (docs have it)</li></ul>
+        </div>
+        <div class="tClear poTopLine">
+            <img src='/libraries/Kendo_UI_Icons_32x32/TabStrip_kendoui.sflb' class='poBoxIcon' width='32' height='32' alt='Kendo UI TabStrip Icon'>
+            <h2>TabStrip</h2>
+
+            
+            <p><strong>What's fixed</strong></p><ul><li>TabStrip with URL parameters doesn't reflect the view change on app.navigate()</li></ul>
+        </div>
+    </div>
+</body>
+</html>

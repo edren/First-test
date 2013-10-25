@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	
+    	<title>My Apps</title>
+        <link rel='stylesheet' href="jqueryMobile/demos/css/themes/default/jquery.mobile-1.3.2.min.css">
+        <link rel='stylesheet' href="jqueryMobile/kendo_UI/src/styles/kendo.mobile.all.css">
+        <link  href="jqueryMobile/demos/favicon.ico">
+        
+        
+        
+        <script src="jqueryMobile/demos/js/jquery.js"></script>
+        <script src="jqueryMobile/js/monscript.js"></script>
+        <script src="jqueryMobile/demos/js/jquery.mobile-1.3.2.min.js"></script>
+        
+    </head>
+
+    <body>
+    	
+        <!-------------------------------------------------------Page 1----------------------------------------------------->
+        
+        <div data-role="page" data-rid="page1" id='page1' data-theme="b" data-title="Page1">
+        	
+            <div data-role="header" data-position="fixed" data-theme="a">
+            	<h1>MTN store</h1>
+            </div>
+            
+            <div data-role="content">
+            	<form>
+                    <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true" >
+                        <label for="radio-1">Male</label>
+                        <input type="radio" name="radio" id='radio-1' value="male" data-theme="c">
+                        <label for="radio-2">Female</label>
+                        <input type="radio" name="radio" id='radio-2' value="female" data-theme="c">
+                    </fieldset>
+                    <!--<select name="flip-1" id="flip-1" data-role="slider" data-mini="true" data-theme="c" data-track-theme="d">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>-->
+                </form>
+                <div data-role="collapsible-set" >
+                    <div data-role="collapsible" id='collapse' data-mini="true"  data-collapsed="true" data-content-theme="c" data-collapsed-icon="home" data-expanded-icon="arrow-d" data-transition="slide">
+                        <h4 id="collapsible-1">Section 1</h4>
+                        <ul data-role="listview" id='datarole'>
+                            <li data-mini="true"><a href="#page2">List item 1</a></li>
+                            <li data-mini="true"><a href="#">List item 2</a></li>
+                            <li data-mini="true"><a href="#">List item 3</a></li>
+                        </ul>
+                    </div>
+                    <div data-role="collapsible" data-mini="true" id="collapsible-2" data-collapsed="true" data-content-theme="c" data-iconpos="">
+                        <h4>Section 2</h4>
+                        <ul data-role="listview" data-content-theme="c">
+                            <li data-mini="true"><a href="#page2" data-transition="pop" data-direction="reverse">List item 1</a></li>
+                            <li data-mini="true"><a href="#">List item 2</a></li>
+                            <li data-mini="true"><a href="#">List item 3</a></li>
+                        </ul>
+                    </div>
+    			</div>
+                
+                
+                <div data-theme="a">
+                    <a href="#popupParis" data-rel="popup" data-position-to="window" data-transition="fade">
+                        <img class="popphoto" src="jqueryMobile/demos/_assets/img/paris.jpg" alt="Paris, France" style="width:30%">
+                    </a>
+                    <a href="#popupSydney" data-rel="popup" data-position-to="window" data-transition="fade">
+                        <img class="popphoto" src="jqueryMobile/demos/_assets/img/sydney.jpg" alt="Sydney, Australia" style="width:30%">
+                    </a>
+                    <a href="#popupNYC" data-rel="popup" data-position-to="window" data-transition="fade">
+                        <img class="popphoto" src="jqueryMobile/demos/_assets/img/newyork.jpg" alt="New York, USA" style="width:30%">
+                    </a>
+                    <div data-role="popup" id="popupParis" data-overlay-theme="a" data-theme="d" data-corners="false">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">
+                            Close
+                        </a>
+                        <img class="popphoto" src="jqueryMobile/demos/_assets/img/paris.jpg" style="max-height:512px;" alt="Paris, France">
+                    </div>
+                    <div data-role="popup" id="popupSydney" data-overlay-theme="a" data-theme="d" data-corners="false">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">
+                            Close
+                        </a>
+                        <img class="popphoto" src="jqueryMobile/demos/_assets/img/sydney.jpg" style="max-height:512px;" alt="Sydney, Australia">
+                    </div>
+                    <div data-role="popup" id="popupNYC" data-overlay-theme="a" data-theme="d" data-corners="false">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">
+                            Close
+                        </a>
+                        <img class="popphoto" src="jqueryMobile/demos/_assets/img/newyork.jpg" style="max-height:512px;" alt="New York, USA">
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+            <div data-role="footer" data-position="fixed">
+            	<h1></h1>
+            </div>
+            
+            
+          </div>
+          
+          <!----------------------------------------------------Fin page 1---------------------------------------------------->
+          
+          
+          
+          
+          <!-------------------------------------------------------Page 2----------------------------------------------------->
+          
+          <div data-role="page" data-rid="page2" id='page2' data-title="Page2">
+        	
+            <div data-role="header" data-content-theme="b" data-position="fixed" style="margin:auto">
+            	<h1>My Apps-Store</h1>
+            </div>
+            
+            <div data-role="content">
+                <form>
+                    <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                        <label for="radio-1">Male</label>
+                        <input type="radio" name="radio" id='radio-1' value="male">
+                        <label for="radio-2">Female</label>
+                        <input type="radio" name="radio" id='radio-2' value="female">
+                    </fieldset>
+                    <!--<select name="flip-1" id="flip-1" data-role="slider" data-mini="true" data-theme="c" data-track-theme="d">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>-->
+                </form>
+                
+                <div data-role="collapsible" data-mini="true" id="set2" data-collapsed="true" data-content-theme="c" data-iconpos="">
+                    <h4>Section 1</h4>
+                    <ul data-role="listview" data-content-theme="c">
+                        <li data-mini="true"><a href="#">List item 1</a></li>
+                        <li data-mini="true"><a href="#">List item 2</a></li>
+                        <li data-mini="true"><a href="#page1">List item 3</a></li>
+                    </ul>
+                </div>
+            
+            </div>
+            
+            <div data-role="footer" data-position="fixed">
+            	<h1></h1>
+            </div>
+            
+            
+          </div>
+          
+    	  <!-------------------------------------------------------Fin page 2-------------------------------------------------->
+           
+    </body>
+</html>
